@@ -920,7 +920,7 @@ Return EXACTLY {batch_size} turns as a JSON array (no markdown):
             resp = requests.post("https://gen.pollinations.ai/v1/chat/completions", json={
                 "model": model_name,
                 "messages": [
-                    {"role": "system", "content": "You write natural A2-level Hebrew podcast scripts with VERY clear punctuation. Every sentence must have at least 2 commas for natural TTS pauses. Daniel and Noa strictly alternate. Highlight 1 key target word per turn in double asterisks. No filler sounds. CRITICAL: the target field must contain ONLY Hebrew . The translit field must contain ONLY Latin letters: romanization. English belongs only in the english field. Output single compact JSON array without unescaped newlines inside strings."},
+                    {"role": "system", "content": "You write natural A2-level Hebrew podcast scripts with VERY clear punctuation. Every sentence must have at least 2 commas for natural TTS pauses. Daniel and Noa strictly alternate. Highlight 1 key target word per turn in double asterisks. No filler sounds. CRITICAL: the target field must contain ONLY Hebrew . Each host addresses the OTHER host by name: Noa greets Daniel and Daniel greets Noa. No host ever addresses themselves by their own name; the only exception is introducing yourself. The translit field must contain ONLY Latin letters: romanization. English belongs only in the english field. Output single compact JSON array without unescaped newlines inside strings."},
                     {"role": "user", "content": prompt}
                 ],
                 "temperature": 0.8
